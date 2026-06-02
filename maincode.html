@@ -1,0 +1,398 @@
+@ -0,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HairCare Pro | Ultimate Solutions & Equipment Guide</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        :root {
+            --brand-primary: #1b4d3e;     
+            --brand-accent: #dfb15b;      
+            --charcoal: #2d3142;          
+            --neutral-cream: #f9f6f0;     
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            color: var(--charcoal);
+            line-height: 1.6;
+        }
+
+        /* Navigation styling overrides */
+        .navbar {
+            background-color: var(--brand-primary) !important;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.15);
+        }
+
+        .nav-link {
+            font-weight: 500;
+            letter-spacing: 0.3px;
+            transition: color 0.25s ease-in-out;
+        }
+
+        .nav-link:hover {
+            color: var(--brand-accent) !important;
+        }
+
+        /* Dynamic Hero/Banner Block */
+        .hero-banner {
+            background: linear-gradient(rgba(27, 77, 62, 0.88), rgba(27, 77, 62, 0.88)), 
+                        url('https://images.unsplash.com/photo-1562322140-8baeececf3df?auto=format&fit=crop&w=1200&q=80') center/cover no-repeat;
+            padding: 100px 0;
+            color: #ffffff;
+        }
+
+        /* Organic card layout stylings */
+        .treatment-card {
+            border: 1px solid rgba(0,0,0,0.08);
+            border-radius: 8px;
+            background: #ffffff;
+            transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+        }
+
+        .treatment-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.08);
+        }
+
+        .section-header h2 {
+            color: var(--brand-primary);
+            font-weight: 700;
+            position: relative;
+            padding-bottom: 12px;
+        }
+
+        .section-header h2::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 60px;
+            height: 3px;
+            background-color: var(--brand-accent);
+        }
+
+        .bg-light-custom {
+            background-color: var(--neutral-cream);
+        }   
+        
+        .btn-custom {
+            background-color: var(--brand-accent);
+            color: #111111;
+            font-weight: 600;
+            border: none;
+        }
+
+        .btn-custom:hover {
+            background-color: #cb9e4c;
+            color: #000000;
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-xl navbar-dark sticky-top">
+        <button type="button" class="btn btn-primary">Quality at its peak</button>
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="#home-top">
+                <i class="fa-solid fa-leaf text-warning me-2"></i>
+                <span class="fw-bold tracking-tight">HAIRCARE<span class="text-warning">PRO</span></span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainMenuNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="mainMenuNav">
+                <ul class="navbar-nav ms-auto gap-1">
+                    <li class="nav-item"><a class="nav-link" href="#home-top">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#conditions-menu">Treatments</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#home-remedies">Remedies</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#hardware-specs">Equipment</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#retail-products">Products</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#media-gallery">Gallery</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#latest-news">Updates</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact-channels">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header id="home-top" class="hero-banner text-center">
+        <div class="container py-5">
+            <h1 class="display-4 fw-bold">Scientific & Natural Hair Restoration</h1>
+            <p class="lead max-w-2xl mx-auto my-4 text-white-50">Explore complete guidelines, premium tools, therapeutic recovery products, and clinically validated tracking metrics for optimal scalp longevity.</p>
+            <div class="mt-4 pt-2">
+                <a href="#conditions-menu" class="btn btn-custom btn-lg px-4 me-md-3 mb-2 mb-md-0">View Solutions</a>
+                <a href="#contact-channels" class="btn btn-outline-light btn-lg px-4 mb-2 mb-md-0">Locate Clinic</a>
+            </div>
+        </div>
+    </header>
+
+    <section id="conditions-menu" class="py-5">
+        <div class="container py-4">
+            <div class="section-header text-center mb-5">
+                <h2>Targeted Hair Conditions</h2>
+                <p class="text-muted mt-2">Identify your symptoms to determine appropriate corrective treatment courses.</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-sm-6 col-md-3">
+                    <div class="treatment-card p-4 text-center h-100">
+                        <div class="text-danger mb-3"><i class="fa-solid fa-chart-line-down fa-2x"></i></div>
+                        <h5 class="fw-bold mb-2">Hair Loss</h5>
+                        <p class="text-muted small mb-0">Hormonal, genetic, and stress-triggered follicular shed cycles.</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-3">
+                    <div class="treatment-card p-4 text-center h-100">
+                        <div class="text-secondary mb-3"><i class="fa-solid fa-circle-half-stroke fa-2x"></i></div>
+                        <h5 class="fw-bold mb-2">Premature Graying</h5>
+                        <p class="text-muted small mb-0">Melanin pigment depletion across accelerated age groups.</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-3">
+                    <div class="treatment-card p-4 text-center h-100">
+                        <div class="text-success mb-3"><i class="fa-solid fa-seedling fa-2x"></i></div>
+                        <h5 class="fw-bold mb-2">Growth Stagnation</h5>
+                        <p class="text-muted small mb-0">Extended dormant phases resulting in delayed natural structural elongation.</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-3">
+                    <div class="treatment-card p-4 text-center h-100">
+                        <div class="text-warning mb-3"><i class="fa-solid fa-person-falling-burst fa-2x"></i></div>
+                        <h5 class="fw-bold mb-2">Premature Baldness</h5>
+                        <p class="text-muted small mb-0">Localized patch miniaturization requiring deep therapeutic repair systems.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="home-remedies" class="py-5 bg-light-custom">
+        <div class="container py-3">
+            <div class="section-header text-center mb-5">
+                <h2>Empirical Home Remedies</h2>
+                <p class="text-muted mt-2">Cost-effective, highly accessible therapies utilizing clean organic compounds.</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body p-4">
+                            <span class="badge bg-success-subtle text-success mb-3 px-3 py-2 rounded-pill">Follicle Revival</span>
+                            <h5 class="fw-bold mb-2">Pure Onion Juice Scalp Saturation</h5>
+                            <p class="text-muted small">High sulfur components help reduce severe strand breakage while optimizing nutrient delivery.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body p-4">
+                            <span class="badge bg-dark-subtle text-dark mb-3 px-3 py-2 rounded-pill">Pigment Lock</span>
+                            <h5 class="fw-bold mb-2">Amla Extract & Coconut Oil Blend</h5>
+                            <p class="text-muted small">Deeply enriches localized root structures to naturally counter premature grays.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body p-4">
+                            <span class="badge bg-primary-subtle text-primary mb-3 px-3 py-2 rounded-pill">Moisture Shield</span>
+                            <h5 class="fw-bold mb-2">Aloe Vera & Organic Curd Compress</h5>
+                            <p class="text-muted small">Rebalances micro-surface hydration zones to eliminate dry dandruff scaling instantly.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="hardware-specs" class="py-5">
+        <div class="container py-3">
+            <div class="section-header text-center mb-5">
+                <h2>Equipment Matrix & User Manuals</h2>
+                <p class="text-muted mt-2">Compare brand catalogs, hardware parameters, and maintenance criteria.</p>
+            </div>
+
+            <div class="row g-2 text-center mb-5">
+                <div class="col-6 col-md-2"><div class="p-3 bg-light rounded border border-secondary-subtle">Dryers</div></div>
+                <div class="col-6 col-md-2"><div class="p-3 bg-light rounded border border-secondary-subtle">Straighteners</div></div>
+                <div class="col-6 col-md-2"><div class="p-3 bg-light rounded border border-secondary-subtle">Spray Bottles</div></div>
+                <div class="col-6 col-md-2"><div class="p-3 bg-light rounded border border-secondary-subtle">Steamers</div></div>
+                <div class="col-6 col-md-2"><div class="p-3 bg-light rounded border border-secondary-subtle">Massagers</div></div>
+                <div class="col-6 col-md-2"><div class="p-3 bg-light rounded border border-secondary-subtle">Spa Caps</div></div>
+            </div>
+
+            <div class="table-responsive shadow-sm rounded border">
+                <table class="table table-hover align-middle mb-0">
+                    <thead class="table-dark" style="background-color: var(--brand-primary);">
+                        <tr>
+                            <th scope="col" class="py-3 ps-4">System Type</th>
+                            <th scope="col" class="py-3">Leading Suppliers</th>
+                            <th scope="col" class="py-3">Pricing Tier</th>
+                            <th scope="col" class="py-3">Key Features</th>
+                            <th scope="col" class="py-3 pe-4">Manuals & Care Guidelines</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="fw-bold ps-4">Ionic Dryers</td>
+                            <td>Dyson, Philips, Panasonic</td>
+                            <td><span class="text-danger fw-semibold">High / Premium</span></td>
+                            <td>Intelligent thermal control sensors</td>
+                            <td class="text-muted small pe-4">De-clog rear protective filters every 30 days. Maintain strict separation from damp counters.</td>
+                        </tr>
+                        <tr>
+                            <td class="fw-bold ps-4">Thermal Straighteners</td>
+                            <td>GHD, Remington, L'Oreal</td>
+                            <td><span class="text-warning fw-semibold">Moderate-High</span></td>
+                            <td>Floating tourmaline plates</td>
+                            <td class="text-muted small pe-4">Clean faceplates via soft microfiber wraps after cooling. Avoid cord strain.</td>
+                        </tr>
+                        <tr>
+                            <td class="fw-bold ps-4">Ozone Steamers</td>
+                            <td>Secura, Salon Sundry</td>
+                            <td><span class="text-success fw-semibold">Accessible / Budget</span></td>
+                            <td>Automated mist timers</td>
+                            <td class="text-muted small pe-4">Run pure distilled fluids only to mitigate lime scaling. Drain fully post-use.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <section id="retail-products" class="py-5 bg-light-custom">
+        <div class="container py-3">
+            <div class="section-header text-center mb-5">
+                <h2>Product Formulations Ecosystem</h2>
+                <p class="text-muted mt-2">Essential care lines built to support styling, moisture lock, and structural integrity.</p>
+            </div>
+            <div class="row row-cols-2 row-cols-sm-3 row-cols-md-4 g-3 text-center">
+                <div class="col"><div class="card border-0 p-3 h-100"><div class="card-body"><i class="fa-solid fa-jar-wheat text-primary fa-xl mb-3"></i><h6 class="fw-bold mb-0">Hair Creams</h6></div></div></div>
+                <div class="col"><div class="card border-0 p-3 h-100"><div class="card-body"><i class="fa-solid fa-soap text-primary fa-xl mb-3"></i><h6 class="fw-bold mb-0">Shampoo Lines</h6></div></div></div>
+                <div class="col"><div class="card border-0 p-3 h-100"><div class="card-body"><i class="fa-solid fa-pump-soap text-primary fa-xl mb-3"></i><h6 class="fw-bold mb-0">Conditioners</h6></div></div></div>
+                <div class="col"><div class="card border-0 p-3 h-100"><div class="card-body"><i class="fa-solid fa-face-cream text-primary fa-xl mb-3"></i><h6 class="fw-bold mb-0">Deep Masks</h6></div></div></div>
+                <div class="col"><div class="card border-0 p-3 h-100"><div class="card-body"><i class="fa-solid fa-droplet text-primary fa-xl mb-3"></i><h6 class="fw-bold mb-0">Repair Serums</h6></div></div></div>
+                <div class="col"><div class="card border-0 p-3 h-100"><div class="card-body"><i class="fa-solid fa-spray-can text-primary fa-xl mb-3"></i><h6 class="fw-bold mb-0">Fixing Sprays</h6></div></div></div>
+                <div class="col"><div class="card border-0 p-3 h-100"><div class="card-body"><i class="fa-solid fa-bottle-droplet text-primary fa-xl mb-3"></i><h6 class="fw-bold mb-0">Therapeutic Oils</h6></div></div></div>
+                <div class="col"><div class="card border-0 p-3 h-100 d-flex align-items-center justify-content-center"><div class="card-body"><i class="fa-solid fa-plus text-warning fa-xl mb-2"></i><h6 class="fw-bold text-muted mb-0">More Options</h6></div></div></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="media-gallery" class="py-5">
+        <div class="container py-3">
+            <div class="section-header text-center mb-5">
+                <h2>Instrument Catalog & Details</h2>
+                <p class="text-muted mt-2">A technical preview of the primary instruments used in professional hair care clinics.</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1593998066526-65fcab3021a2?auto=format&fit=crop&w=500&q=80" class="card-img-top" alt="High Tech Ionic Hair Dryer">
+                        <div class="card-body p-4">
+                            <h5 class="fw-bold">High Tech Dryer</h5>
+                            <p class="card-text text-muted small">Splits water clusters down fast to secure high speed drying without adding localized static structural distortion.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=500&q=80" class="card-img-top" alt="Wide Carbon Detangler Comb">
+                        <div class="card-body p-4">
+                            <h5 class="fw-bold">Detangler Systems</h5>
+                            <p class="card-text text-muted small">Wide-gap spacing layout variants custom engineered to safely untangle fragile, wet hair fibers without snapping them.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1621607512214-68297480165e?auto=format&fit=crop&w=500&q=80" class="card-img-top" alt="Micro Surgical Steel Shears">
+                        <div class="card-body p-4">
+                            <h5 class="fw-bold">Precision Shears</h5>
+                            <p class="card-text text-muted small">Constructed using specialized hardened surgical steel to isolate and cleanly prune split ends away safely.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="latest-news" class="py-5 bg-light-custom">
+        <div class="container py-3">
+            <div class="section-header text-center mb-5">
+                <h2>Emerging Clinical Innovations</h2>
+                <p class="text-muted mt-2">The latest global breakthroughs and technical developments in scalp therapy.</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-6">
+                    <div class="p-4 bg-white rounded shadow-sm border-start border-4 border-warning">
+                        <span class="badge bg-dark text-
+                        white mb-2">Technical Breakthrough</span>
+                        <h5 class="fw-bold">Low-Level Laser Therapy (LLLT) Wearables</h5>
+                        <p class="text-muted small mb-0 mt-2">Recent clinical testing validates the effectiveness of structured red-light laser bands to revive localized cellular synthesis and stimulate dormant follicles.</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="p-4 bg-white rounded shadow-sm border-start border-4 border-warning">
+                        <span class="badge bg-dark text-white mb-2">Clinical Science</span>
+                        <h5 class="fw-bold">Microbiome-Centric Organic Cleansers</h5>
+                        <p class="text-muted small mb-0 mt-2">Formulations are pivoting away from harsh sulfate compounds to support balanced, natural skin flora ecosystems on the scalp.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact-channels" class="py-5">
+        <div class="container py-3">
+            <div class="section-header text-center mb-5">
+                <h2>Connect with Our Labs</h2>
+                <p class="text-muted mt-2">Reach out to our experts or locate our physical consultations hub below.</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-5">
+                    <div class="p-4 rounded text-white h-100" style="background-color: var(--brand-primary);">
+                        <h4 class="fw-bold mb-4">Contact Metrics</h4>
+                        <div class="d-flex mb-3"><i class="fa-solid fa-map-pin text-warning mt-1 me-3"></i><p class="mb-0">742 Evergreen Terrace, Suite 10, Medical District</p></div>
+                        <div class="d-flex mb-3"><i class="fa-solid fa-phone-flip text-warning mt-1 me-3"></i><p class="mb-0">+1 (555) 492-3821</p></div>
+                        <div class="d-flex mb-4"><i class="fa-solid fa-envelope-open text-warning mt-1 me-3"></i><p class="mb-0">support@haircarepro-labs.com</p></div>
+                        <hr style="border-color: rgba(255,255,255,0.15);">
+                        <h6 class="fw-bold text-warning mb-2">Operational Timings</h6>
+                        <p class="small mb-0 text-white-50">Monday through Saturday: 08:00 AM – 06:00 PM<br>Sundays: Emergency evaluations only</p>
+                    </div>
+                </div>
+                <div class="col-md-7">
+                    <div class="rounded border bg-light w-100 h-100 shadow-sm" style="min-height: 300px; overflow: hidden;">
+                        <iframe 
+                            src="https://maps.google.com/maps?q=New%20York&t=&z=13&ie=UTF8&iwloc=&output=embed" 
+                            width="100%" 
+                            height="100%" 
+                            style="border:0; min-height: 300px;" 
+                            allowfullscreen="" 
+                            loading="lazy">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="text-white text-center py-4 border-top border-warning border-3" style="background-color: #171921;">
+        <div class="container">
+            <p class="mb-1 text-white-50 small">&copy; 2023 HairCare Pro Labs. All rights reserved.</p>
+            <p class="small mb-0" style="color: var(--brand-accent);"></p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
